@@ -170,3 +170,116 @@ footer {
     width: 30px; 
     height: 30px;
 }
+.imagenprincipal {
+    background-image: url('Imagenes/h.jpeg');
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px; 
+}
+
+.textoimagen {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Arial'; 
+}
+
+.card-contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.separador {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 40px 0;
+}
+
+.textofrases {
+    text-align: center;
+    padding: 0 0 20px 0;
+    display: flex; 
+    justify-content: space-around; 
+    font-style: italic;
+}
+
+.container {
+    position: relative; 
+    width: 300px; 
+    height: 600px; 
+}
+
+.square {
+    position: absolute;
+    width: 500px;
+    height: 281.25px;
+    border: 2px solid #000;
+    opacity: 0.5; 
+    transition: opacity 0.8s;
+}
+
+.square.selected {
+    opacity: 1; 
+}
+
+#square1 {
+    left: 250px;
+    top: 0;
+    z-index: 1;
+    margin-top: 20px;
+    background-image: url('Imagenes/m.jpg');
+    background-size: contain;   
+}
+
+#square2 {
+    left: 570px; 
+    top: 150px; 
+    z-index: 2;
+    background-image: url('Imagenes/m2.jpg');
+    background-size: contain;   
+}
+
+#square3 {
+    left:880px; 
+    top: 290px;  
+    z-index: 3;
+    background-image: url('Imagenes/m3.jpeg');
+    background-size: contain;  
+}
+
+.square h2 {
+    color: white; 
+    text-align: center; 
+    font-style: italic;
+}
+
+.square ul {
+    color: white; 
+}
+
+.square ul li {
+    margin-bottom: 10px; 
+}
