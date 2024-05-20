@@ -283,3 +283,95 @@ footer {
 .square ul li {
     margin-bottom: 10px; 
 }
+
+.container2 {
+    position: relative; 
+    width: 300px; 
+    height: 500px; 
+}
+
+.contacto {
+    position: absolute;
+    width: 500px;
+    height: 281.25px;
+    border: 2px solid #000;
+    opacity: 0.5; 
+    transition: opacity 0.8s;
+}
+
+.contacto.selected {
+    opacity: 1; 
+}
+
+#contacto1 {
+    left: 650px;
+    top: 0;
+    z-index: 1;
+    margin-top: 20px;
+    background-image: url('Imagenes/c1.jpg');
+    background-size: contain;   
+}
+
+#contacto2 {
+    left: 450px; 
+    top: 210px; 
+    z-index: 2;
+    background-image: url('Imagenes/c2.jpg');
+    background-size: contain;   
+}
+
+.contacto h2 {
+    color: white; 
+    text-align: center; 
+    font-style: italic;
+}
+
+.contacto ul {
+    color: white; 
+}
+
+.contacto ul li {
+    margin-bottom: 10px; 
+}
+
+.reseñas-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color: #f7f7f7;
+}
+
+.reseña {
+    width: 30%;
+    text-align: center;
+}
+
+.reseña h3 {
+    margin-bottom: 10px;
+}
+
+.reseña p {
+    font-style: italic;
+}
+
+.reseñas-container2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    background-color: #f7f7f7;
+}
+
+.reseña2 {
+    width: 30%;
+    text-align: center;
+}
+
+.reseña2 h3 {
+    margin-bottom: 10px;
+}
+
+.reseña2 p {
+    font-style: italic;
+}
