@@ -112,16 +112,17 @@ footer {
     max-width: 1200px; 
     margin: 0 auto; 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; /* Cambiado para distribuir los elementos horizontalmente */
     align-items: center;
 }
 
 .footer-info,
 .footer-links,
 .footer-social {
-    width: 30%; 
-    text-align: left;
+    flex: 1; /* Para que cada sección ocupe el mismo ancho */
+    margin: 0 10px; /* Para separar las secciones */
+    min-width: 200px; /* Asegura que las secciones tengan un ancho mínimo */
+    text-align: center; /* Centrar el texto dentro de cada sección */
 }
 
 .footer-info h3,
@@ -159,7 +160,7 @@ footer {
 
 .footer-social ul li {
     display: inline-block; 
-    margin-right: 30px; 
+    margin-right: 10px; /* Reducido para una separación más estrecha entre iconos */
 }
 
 .footer-social ul li:last-child {
@@ -170,6 +171,9 @@ footer {
     width: 30px; 
     height: 30px;
 }
+
+
+
 .imagenprincipal {
     background-image: url('Imagenes/h.jpeg');
     height: 50vh;
