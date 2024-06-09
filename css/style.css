@@ -9601,12 +9601,12 @@ h6,
   margin: 0;
   top: -5px;
   right: 10px;
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 45px;
+  border-radius: 60px;
   color: #33211D;
   background: #DA9F5B;
 }
