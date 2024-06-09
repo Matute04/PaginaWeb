@@ -112,17 +112,16 @@ footer {
     max-width: 1200px; 
     margin: 0 auto; 
     display: flex;
-    justify-content: space-between; /* Cambiado para distribuir los elementos horizontalmente */
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
 .footer-info,
 .footer-links,
 .footer-social {
-    flex: 1; /* Para que cada sección ocupe el mismo ancho */
-    margin: 0 10px; /* Para separar las secciones */
-    min-width: 200px; /* Asegura que las secciones tengan un ancho mínimo */
-    text-align: center; /* Centrar el texto dentro de cada sección */
+    width: 30%; 
+    text-align: left;
 }
 
 .footer-info h3,
@@ -160,7 +159,7 @@ footer {
 
 .footer-social ul li {
     display: inline-block; 
-    margin-right: 10px; /* Reducido para una separación más estrecha entre iconos */
+    margin-right: 30px; 
 }
 
 .footer-social ul li:last-child {
@@ -171,9 +170,6 @@ footer {
     width: 30px; 
     height: 30px;
 }
-
-
-
 .imagenprincipal {
     background-image: url('Imagenes/h.jpeg');
     height: 50vh;
@@ -237,16 +233,25 @@ footer {
 }
 
 .square {
+    border-radius: 5px;
     position: absolute;
+    color: black;
     width: 500px;
     height: 281.25px;
-    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #867777;
     opacity: 0.5; 
-    transition: opacity 0.8s;
+    transition: opacity 0.4s;
 }
 
 .square.selected {
     opacity: 1; 
+    color: white;
+    transition: transform 1.7s;
+    border: 2px solid #000;
+    transform: scale(1.1); /* Aumenta el tamaño al 110% para resaltar mas el hover*/
 }
 
 #square1 {
@@ -267,7 +272,7 @@ footer {
 }
 
 #square3 {
-    left:880px; 
+    left: 880px; 
     top: 290px;  
     z-index: 3;
     background-image: url('Imagenes/m3.jpeg');
