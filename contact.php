@@ -50,7 +50,7 @@
 
     <!-- Contact Start -->
     <?php 
-    include("2-contact.html");
+    include("2-contact.php");
     ?>
     
     <!-- Contact End -->
