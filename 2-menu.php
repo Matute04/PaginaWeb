@@ -7,12 +7,12 @@ include('conexion.php');
 <div class="container-fluid pt-5">
     <div class="container">
         <div class="section-title">
-            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menu & Pricing</h4>
-            <h1 class="display-4">Competitive Pricing</h1>
+            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menú & Precios</h4>
+            <h1 class="display-4">Precios Inmejorables</h1>
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <h1 class="mb-5">Saltenias</h1>
+                <h1 class="mb-5">Salteñas</h1>
                 <!-- Saltenias -->
                 <?php
                 $sql="SELECT id,imagen,nombre,descripcion,precio,tipo from productos where tipo='alimento'";
