@@ -37,20 +37,6 @@ CREATE TABLE `productos` (
   `tipo` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Volcado de datos para la tabla `productos`
---
-
-INSERT INTO `productos` (`id`, `imagen`, `nombre`, `descripcion`, `precio`, `tipo`) VALUES
-(1, 'menu-1.jpg', 'Salteña de Carne', 'Empanada boliviana con masa dorada y relleno jugoso de carne de res, papas y especias.', 6.5, 'alimento'),
-(2, 'menu-2.jpg', 'Salteña de Pollo', 'Empanada boliviana con masa dorada y relleno jugoso de carne de pollo, papas y especias.', 6.5, 'alimento'),
-(3, 'menu-3.jpg', 'Salteña Santa Clara', 'Empanada boliviana con masa dorada y relleno especial de Santa Clara.', 5.5, 'alimento'),
-(4, 'menu-11.jpg', 'Cola Cola Personal', 'Bebida refrescante con sabor a cola.', 2, 'bebida'),
-(5, 'menu-21.jpg', 'Refresco de Naranja', 'Bebida refrescante con sabor a naranja.', 3.5, 'bebida'),
-(6, 'menu-31.jpg', 'Refresco de Limón', 'Bebida refrescante con sabor a limón.', 3.5, 'bebida'),
-(7, 'menu-41.jpg', 'Salvietti', 'Bebida refrescante de 1 litro disponible en una variedad de sabores.', 8, 'bebida');
-
--- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `usuarios`
