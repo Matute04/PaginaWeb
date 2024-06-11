@@ -69,6 +69,7 @@
 })(jQuery);
 
 function comentario() {
+
     var formulario = document.getElementById("contactForm");
   
     var parametros =new FormData(formulario);
@@ -79,6 +80,19 @@ function comentario() {
     ajax.onreadystatechange = function () {
         if (ajax.readyState == 4) {
             //datos.innerHTML = ajax.responseText
+            formulario.innerHTML = `<div style="
+        background-color: #4CAF50; /* Fondo verde */
+        color: white; /* Texto blanco */
+        padding: 20px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        font-family: Arial, sans-serif; /* Tipografía */
+        text-align: center; /* Centrar texto */
+        width: 200px; /* Ancho fijo */
+        margin: 50px auto; /* Centrar el div horizontalmente */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra */
+        ">
+        Mensaje Enviado
+    </div>`
             formulario.reset();
         }
     }
@@ -96,6 +110,19 @@ function pedido() {
         if (ajax.readyState == 4) {
             //datos.innerHTML = ajax.responseText
             formulario.reset();
+            formulario.innerHTML = `<div style="
+        background-color: #4CAF50; /* Fondo verde */
+        color: white; /* Texto blanco */
+        padding: 20px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        font-family: Arial, sans-serif; /* Tipografía */
+        text-align: center; /* Centrar texto */
+        width: 200px; /* Ancho fijo */
+        margin: 50px auto; /* Centrar el div horizontalmente */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra */
+        ">
+        Mensaje Enviado
+    </div>`
         }
     }
     ajax.send(parametros);

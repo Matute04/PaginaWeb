@@ -55,6 +55,8 @@ include('conexion2.php');
                         </div>
                         
                     </form>
+                    <!--  -->
+                    <div id ="mensaje"></div>
                 </div>
             </div>
         </div>
