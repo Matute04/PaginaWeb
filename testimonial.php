@@ -55,7 +55,7 @@
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonios</h4>
                 <h1 class="display-4">Nuestros Clientes Dicen</h1>
             </div>
-            <div class="owl-carousel testimonial-carousel">
+            <div class="owl-carousel testimonial-carousel"> <!-- Aca esta el error -->
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
