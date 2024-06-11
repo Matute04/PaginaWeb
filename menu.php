@@ -50,7 +50,7 @@
 
     <!-- Menu Start -->
     <?php 
-    include("2-menu.html");
+    include("2-menu.php");
     ?>
     <!-- Menu End -->
 
