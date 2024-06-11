@@ -51,7 +51,7 @@
     <!-- Service Start -->
 
     <?php 
-    include("2-testimonial.html");
+    include("2-service.html");
     ?>
     <!-- Service End -->
 

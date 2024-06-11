@@ -49,56 +49,9 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonios</h4>
-                <h1 class="display-4">Nuestros Clientes Dicen</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel"> <!-- Aca esta el error -->
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Pedro López</h4>
-                            <i>Arquitecto</i>
-                        </div>
-                    </div>
-                    <p class="m-0">Me encanta el relleno jugoso y los diferentes sabores que ofrecen. ¡Muy recomendable!</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Juan Soteldo</h4>
-                            <i>Administrador de Empresas</i>
-                        </div>
-                    </div>
-                    <p class="m-0">Las mejores salteñas que he probado. El sabor es auténtico y la masa es perfecta.</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>María Gonzales</h4>
-                            <i>Abogada</i>
-                        </div>
-                    </div>
-                    <p class="m-0">Siempre que paso por Sucre, la Salteñería Mary es una parada obligatoria. ¡Deliciosas!</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Ana Torres</h4>
-                            <i>Turista</i>
-                        </div>
-                    </div>
-                    <p class="m-0">La atención es excelente y las salteñas son insuperables. ¡Volveré pronto!</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php 
+    include("2-testimonial.html");
+    ?>
     <!-- Testimonial End -->
 
 
