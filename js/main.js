@@ -68,3 +68,19 @@
     
 })(jQuery);
 
+function comentario() {
+    var formulario = document.getElementById("contactForm");
+  
+    var parametros =new FormData(formulario);
+    
+    var ajax = new XMLHttpRequest() //crea el objetov ajax 
+    
+    ajax.open("post", "insertarcomentario.php", true);
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            //datos.innerHTML = ajax.responseText
+            
+        }
+    }
+    ajax.send(parametros);
+}

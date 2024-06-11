@@ -33,7 +33,7 @@ include('conexion2.php');
             <div class="col-md-6 pb-5">
                 <div class="contact-form">
                     <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" novalidate="novalidate">
+                    <form name="sentMessage" id="contactForm" method="post" action="javascript:comentario()" novalidate="novalidate">
                         <div class="control-group">
                             <input type="text" class="form-control bg-transparent p-4" name="name" placeholder="Tu Nombre" required="required" data-validation-required-message="Please enter your name" />
                             <p class="help-block text-danger"></p>
@@ -53,20 +53,7 @@ include('conexion2.php');
                         <div>
                             <input class="btn btn-primary font-weight-bold py-3 px-5" type="submit" value="Enviar Mensaje" name="submit" id="sendMessageButton">
                         </div>
-                        <?php
-                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                            $nombre = $_POST["name"];
-                            $email = $_POST["email"];
-                            $asunto = $_POST["subject"];
-                            $mensaje = $_POST["message"];
-                            $sql = "INSERT INTO mensajes (nombre, email, asunto, mensaje) VALUES ('$nombre', '$email', '$asunto', '$mensaje')";
-                            if ($con->query($sql) === TRUE) {
-                                echo "Mensaje enviado correctamente.";  
-                            } else {
-                                echo "Error al enviar el mensaje: " . $con->error;
-                            }
-                        }
-                        ?>
+                        
                     </form>
                 </div>
             </div>
