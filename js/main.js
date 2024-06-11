@@ -79,8 +79,25 @@ function comentario() {
     ajax.onreadystatechange = function () {
         if (ajax.readyState == 4) {
             //datos.innerHTML = ajax.responseText
-            
+            formulario.reset();
         }
     }
     ajax.send(parametros);
 }
+function pedido() {
+    var formulario = document.getElementById("orderForm");
+
+    var parametros =new FormData(formulario);
+    
+    var ajax = new XMLHttpRequest() //crea el objetov ajax 
+    
+    ajax.open("post", "insertarpedidos.php", true);
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            //datos.innerHTML = ajax.responseText
+            formulario.reset();
+        }
+    }
+    ajax.send(parametros);
+}
+
